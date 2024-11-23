@@ -10,141 +10,184 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;
-            background: #0e0b16;
-            color: white;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        h1, h2 {
-            color: #ff6f61;
-        }
-
-        .dynamic-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #ff6f61, #ffcc00, #00bcd4, #8e44ad);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            z-index: -1;
-        }
-
-        @keyframes gradientBG {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            background-color: #f4f4f9;
+            color: #333;
         }
 
         .container {
-            padding: 50px;
             width: 80%;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0.7);
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
 
-        .section {
+        h1, h2 {
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #ff6f61;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        section {
             margin-bottom: 30px;
         }
 
-        .section h2 {
-            margin-bottom: 15px;
-        }
-
-        .contact-info {
-            font-size: 18px;
-        }
-
-        .key-deliverables, .tools {
-            text-align: left;
-        }
-
-        .key-deliverables ul, .tools ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .key-deliverables li, .tools li {
-            margin: 8px 0;
-        }
-
-        .summary {
+        .section-title {
+            background-color: #f2f2f2;
+            padding: 10px;
             font-size: 20px;
-            line-height: 1.6;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
 
-        .career-contour {
-            font-size: 18px;
-            font-style: italic;
+        .content {
+            margin-left: 20px;
         }
 
+        .content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content li {
+            margin-bottom: 5px;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #ff6f61;
+        }
     </style>
 </head>
 
 <body>
-    <div class="dynamic-background"></div>
-
     <div class="container">
-        <h1>Sardar's Resume</h1>
-        <div class="contact-info">
+        <div class="header">
+            <h1>Sardar's Resume</h1>
             <p><strong>Name:</strong> Sardar</p>
-            <p><strong>Mobile Number:</strong> 7661062846</p>
-            <p><strong>Email:</strong> <a href="mailto:malothsardar000@gmail.com" style="color: #ffcc00;">malothsardar000@gmail.com</a></p>
+            <p><strong>Phone:</strong> 7661062846</p>
+            <p><strong>Email:</strong> <a href="mailto:malothsardar000@gmail.com">malothsardar000@gmail.com</a></p>
         </div>
 
-        <div class="section summary">
-            <h2>Summary</h2>
-            <p>
-                A passionate and skilled DevOps Engineer with experience in managing and automating infrastructure. Expertise in AWS cloud services, automation using tools like Docker, Jenkins, Kubernetes, and CI/CD pipelines. Highly proficient in troubleshooting, optimizing systems, and delivering projects on time. Aiming to bring strong problem-solving skills and a deep understanding of DevOps practices to any team.
-            </p>
-        </div>
+        <section>
+            <div class="section-title">Professional Summary</div>
+            <div class="content">
+                <p>A results-driven <strong>DevOps Engineer</strong> with expertise in cloud infrastructure, automation, and continuous integration/delivery pipelines. Proficient in <strong>AWS</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>Terraform</strong>, with a strong ability to optimize systems and streamline processes. Experienced in deploying scalable solutions, improving operational efficiency, and ensuring high system availability. Adept at working in agile environments to support development and operations teams, driving both cost savings and innovation.</p>
+            </div>
+        </section>
 
-        <div class="section career-contour">
-            <h2>Career Contour</h2>
-            <p>
-                Over the course of my career, I have developed a broad range of skills in DevOps engineering. I have worked with teams to automate infrastructure, manage cloud services, and ensure efficient, scalable, and secure application delivery. My career has been focused on continuous improvement, helping organizations build and maintain resilient systems that support their goals.
-            </p>
-        </div>
+        <section>
+            <div class="section-title">Core Competencies</div>
+            <div class="content">
+                <ul>
+                    <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, RDS, Lambda, CloudFormation)</li>
+                    <li><strong>Automation & CI/CD:</strong> Jenkins, GitLab CI, Terraform, Ansible</li>
+                    <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes</li>
+                    <li><strong>Scripting & Configuration Management:</strong> Python, Shell, Bash, Puppet</li>
+                    <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana, ELK Stack, AWS CloudWatch</li>
+                    <li><strong>Version Control:</strong> Git, GitHub, Bitbucket</li>
+                    <li><strong>Security & Compliance:</strong> IAM, VPC, VPN, Cloud Security Best Practices</li>
+                    <li><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS, RHEL)</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="section key-deliverables">
-            <h2>Key Deliverables</h2>
-            <ul>
-                <li>Designed and deployed automated CI/CD pipelines using Jenkins, GitLab CI.</li>
-                <li>Set up scalable and cost-efficient AWS environments using EC2, Lambda, S3, and RDS.</li>
-                <li>Improved system performance through containerization using Docker and orchestration with Kubernetes.</li>
-                <li>Developed infrastructure as code (IaC) using Terraform and CloudFormation.</li>
-                <li>Enhanced monitoring and logging processes with CloudWatch and ELK stack to optimize incident response time.</li>
-            </ul>
-        </div>
+        <section>
+            <div class="section-title">Professional Experience</div>
+            <div class="content">
+                <h3><strong>DevOps Engineer</strong> - Company Name | Location</h3>
+                <p><em>MM/YYYY – Present</em></p>
+                <ul>
+                    <li>Managed AWS cloud infrastructure (EC2, S3, Lambda, RDS) and automated infrastructure provisioning with <strong>Terraform</strong> and <strong>CloudFormation</strong>.</li>
+                    <li>Designed and implemented automated CI/CD pipelines using <strong>Jenkins</strong>, <strong>GitLab CI</strong>, and <strong>Docker</strong> to streamline code deployment and reduce manual errors.</li>
+                    <li>Developed containerized applications using <strong>Docker</strong> and orchestrated them with <strong>Kubernetes</strong> to improve deployment efficiency and scalability.</li>
+                    <li>Automated system administration tasks using <strong>Ansible</strong> and <strong>Terraform</strong>, reducing provisioning time by 30% and improving consistency.</li>
+                    <li>Integrated <strong>Prometheus</strong> and <strong>Grafana</strong> for real-time system monitoring and used <strong>ELK stack</strong> for centralized logging and troubleshooting.</li>
+                    <li>Managed IAM roles, security groups, and VPC configurations to ensure secure and compliant AWS environments.</li>
+                </ul>
 
-        <div class="section tools">
-            <h2>Tools & Technologies</h2>
-            <ul>
-                <li>AWS (EC2, S3, Lambda, CloudFormation, RDS)</li>
-                <li>Docker & Kubernetes</li>
-                <li>Jenkins, GitLab CI/CD</li>
-                <li>Terraform, Ansible</li>
-                <li>Linux (Ubuntu, CentOS, RedHat)</li>
-                <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
-                <li>Git, GitHub, Bitbucket</li>
-                <li>Monitoring tools (Nagios, Prometheus, Grafana)</li>
-            </ul>
-        </div>
-    </div>
+                <h3><strong>Systems Engineer</strong> - Previous Company Name | Location</h3>
+                <p><em>MM/YYYY – MM/YYYY</em></p>
+                <ul>
+                    <li>Assisted in the deployment and maintenance of cloud-based infrastructure on <strong>AWS</strong>.</li>
+                    <li>Developed scripts using <strong>Bash</strong> and <strong>Python</strong> to automate routine tasks, reducing manual intervention.</li>
+                    <li>Managed codebase using <strong>Git</strong> and <strong>Bitbucket</strong> for version control and collaboration.</li>
+                    <li>Configured <strong>CloudWatch</strong> for monitoring cloud resources, ensuring system uptime and reliability.</li>
+                </ul>
+            </div>
+        </section>
 
-</body>
+        <section>
+            <div class="section-title">Key Achievements</div>
+            <div class="content">
+                <ul>
+                    <li>Reduced AWS costs by 25% through optimizing EC2 instance sizes and eliminating unused resources.</li>
+                    <li>Decreased deployment times by 40% by automating workflows and improving CI/CD pipeline processes.</li>
+                    <li>Strengthened cloud security by implementing IAM policies and VPC security controls, reducing security incidents by 15%.</li>
+                    <li>Spearheaded the implementation of <strong>Infrastructure as Code (IaC)</strong> using <strong>Terraform</strong>, streamlining cloud resource provisioning.</li>
+                    <li>Led the migration of legacy applications to <strong>Kubernetes</strong>, reducing downtime during deployments by 30%.</li>
+                </ul>
+            </div>
+        </section>
 
-</html>
+        <section>
+            <div class="section-title">Technical Skills</div>
+            <div class="content">
+                <ul>
+                    <li><strong>Cloud Services:</strong> AWS (EC2, S3, Lambda, RDS, CloudFormation, VPC, CloudWatch)</li>
+                    <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes</li>
+                    <li><strong>CI/CD Tools:</strong> Jenkins, GitLab CI, CircleCI</li>
+                    <li><strong>Automation:</strong> Terraform, Ansible, Puppet</li>
+                    <li><strong>Version Control:</strong> Git, GitHub, Bitbucket</li>
+                    <li><strong>Scripting:</strong> Python, Shell, Bash</li>
+                    <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK Stack, AWS CloudWatch</li>
+                    <li><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS, RHEL)</li>
+                    <li><strong>Security & Networking:</strong> IAM, VPN, VPC, Security Groups</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Education</div>
+            <div class="content">
+                <p><strong>Bachelor of Technology in Computer Science</strong><br>
+                    University Name — Year of Graduation<br>
+                    Relevant Coursework: Cloud Computing, Data Structures, Software Engineering, Networking
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Certifications</div>
+            <div class="content">
+                <ul>
+                    <li>AWS Certified Solutions Architect – Associate</li>
+                    <li>Docker Certified Associate (DCA)</li>
+                    <li>Certified Kubernetes Administrator (CKA)</li>
+                    <li>Terraform Associate Certification</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Projects</div>
+            <div class="content">
+                <h4><strong>Automated CI/CD Pipeline for Web Application Deployment</strong></h4>
+                <p>Designed a fully automated CI/CD pipeline using Jenkins and Docker, enabling faster and more reliable deployments for a web application.</p>
+
+                <h4><strong>Cloud Infrastructure Automation with Terraform</strong></h4>
+                <p>Created an Infrastructure as Code (IaC)
